@@ -29,3 +29,23 @@ var dataFilm = film.map(function(item){
 })
 console.log(dataFilm);
 console.log("---------------- Soal 3 end ----------------\n");
+
+console.log("---------------- Soal 4 start ----------------");
+class Animal {
+  constructor(name, legs, cold_blooded) {
+    this.legs = 4
+    this.cold_blooded = false
+    this.name = name
+  }
+  get cnam() {
+    return this.name;
+  }
+}
+
+var sheep = new Animal("shaun");
+ 
+console.log(sheep.name) // "shaun"
+console.log(sheep.legs) // 4
+console.log(sheep.cold_blooded) // false
+
+console.log("---------------- Soal 4 end ----------------\n");
