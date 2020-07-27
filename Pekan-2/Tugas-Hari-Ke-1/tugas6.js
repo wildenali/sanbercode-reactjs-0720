@@ -48,4 +48,33 @@ console.log(sheep.name) // "shaun"
 console.log(sheep.legs) // 4
 console.log(sheep.cold_blooded) // false
 
+
+class Ape extends Animal {
+  constructor(name, legs, cold_blooded) {
+    super(name);
+    this.legs = 2
+    this.name = name
+  }
+  yell() {
+    return console.log('Auooo');
+  }
+}
+var sungokong = new Ape("kera sakti");
+// console.log(sungokong.name);
+sungokong.yell();
+
+class Frog extends Animal {
+  constructor(name, legs, cold_blooded) {
+    super(name);
+    this.legs = 4
+    this.name = name
+  }
+  jump() {
+    return console.log('hop hop');
+  }
+}
+var kodok = new Frog("buduk");
+// console.log(kodok.name);
+kodok.jump();
+
 console.log("---------------- Soal 4 end ----------------\n");
