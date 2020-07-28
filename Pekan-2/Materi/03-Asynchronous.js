@@ -37,6 +37,9 @@ var willGetNewPhone = new Promise(function(resolve, reject) {
   }
 });
 
+
+console.log('cek ', willGetNewPhone);
+
 function askMom() {
   willGetNewPhone
     .then(function(fulfilled) {
@@ -47,5 +50,6 @@ function askMom() {
     });
 }
 
+console.log('cek ', askMom);
 // tanya mom
 askMom()
