@@ -7,8 +7,19 @@ var books = [
   {name: 'Komik', timeSpent: 1000},
 ]
 
+// Function Declaration
+function buatObjectBook(name, timeSpent){
+  var book = {};
+  book.name = name;
+  book.timeSpent = timeSpent;
+  return book;
+}
+
+var buku = buatObjectBook('LOTR', 3000);
+console.log(buku);
+
 function sisaWaktu(waktu) {
   console.log(`Sisa waktu ${waktu}`);
 }
 
-readBooks(10000, books, sisaWaktu);
+readBooks(10000, buku, sisaWaktu);
