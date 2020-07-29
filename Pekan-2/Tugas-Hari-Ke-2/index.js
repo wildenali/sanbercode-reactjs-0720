@@ -7,8 +7,8 @@ var books = [
   {name: 'Komik', timeSpent: 1000},
 ]
 
+function sisaWaktu(waktu) {
+  console.log(`Sisa waktu ${waktu}`);
+}
 
-readBooks(10000, books, results => {
-  const mhs = JSON.parse(results);
-  console.log(mhs);
-}, () => {});
+readBooks(10000, books, sisaWaktu);
