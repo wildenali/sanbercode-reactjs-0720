@@ -15,7 +15,7 @@ function buatObjectBook(name, timeSpent){
   return book;
 }
 
-var buku = buatObjectBook('LOTR', 3000);
+var buku = buatObjectBook(books[0].name, books[0].timeSpent);
 console.log(buku);
 
 function sisaWaktu(waktu) {

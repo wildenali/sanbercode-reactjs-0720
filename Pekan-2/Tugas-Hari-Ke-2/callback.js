@@ -1,6 +1,6 @@
 function readBooks(time, book, callback) {
-  console.log(`waktunya ${time}`)
-  console.log(`bukunya ${book}`)
+  // console.log(`waktunya ${time}`)
+  // console.log(`bukunya ${book}`)
   console.log(`saya membaca ${book.name}`)
   setTimeout(function(){
       let sisaWaktu = 0
