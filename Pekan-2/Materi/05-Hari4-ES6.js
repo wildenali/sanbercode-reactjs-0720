@@ -73,5 +73,40 @@ console.log(second)
 console.log(third)
 console.log(ygAkhir)
 
+// second example
+const filter = (...rest) => {
+  return rest.filter(el => el.text !== undefined)
+}
+console.log(filter)
+console.log(filter(1, {text: "wonderful"}, "next"))
+
+// spread operator
+let array1 = ['one', 'two']
+let array2 = ['three', 'four']
+let array3 = ['five', 'six']
+
+// ES5 Way / Normal Javascript
+var combinedArray = array1.concat(array2).concat(array3)
+console.log(combinedArray)    // ['one', 'two', 'three', 'four', 'five', 'six']
+
+// ES6 Way
+let kombineArray = [...array1, ...array2, ...array3]
+console.log(kombineArray)   // ['one', 'two', 'three', 'four', 'five', 'six']
 
 console.log('----- Rest Parameters + Spread Operator -----\n')
+
+console.log('----- Export Import module -----')
+const orang = {
+  name: "Aliw",
+  age: 30
+}
+export default orang
+
+// export lebih dari satu
+export const clean = () => {return "clean"}
+export const baseData = 10
+
+// cara ambilnya
+// import orang from './orang'
+// import {baseData, clean} from './05-Hari4-ES6.js'
+console.log('----- Export Import module -----\n')
