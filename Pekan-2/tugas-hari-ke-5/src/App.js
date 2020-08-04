@@ -3,31 +3,40 @@ import './App.css';
 
 function App() {
   return (
-    <div className="pembungkus">
-      <form action="" method="post" enctype="multipart/form-data">
-        <h1 align="center"><b>Pembelian Buah</b></h1>
-        <table border="0" cellspacing="10" width="400" align="center">
-          <tr>
-            <td><b>Nama Pelanggan</b></td>
-            <td><input type="text" name="nama"/></td>
-          </tr>
-          <tr>
-            <td style={{verticalAlign: 'bottom'}}><b>Daftar Item</b></td>
-            <td>
-              <label><input type="checkbox" name="semangka" value="semangka"/>Semangka</label>
-              <br/>
-              <label><input type="checkbox" name="semangka" value="semangka"/>Jeruk</label>
-              <br/>
-              <label><input type="checkbox" name="semangka" value="semangka"/>Nanas</label>
-              <br/>
-              <label><input type="checkbox" name="semangka" value="semangka"/>Salak</label>
-              <br/>
-              <label><input type="checkbox" name="semangka" value="semangka"/>Anggur</label>
-            </td>
-          </tr>
-          <td><button className="button" type="submit" name="simpan">Kirim</button></td>
-        </table>
-      </form>
+    <div style={{ width: "40%", margin: "0 auto", marginTop: "20px", border: "1px solid #000", borderRadius: "20px" }}>
+      <h1 style={{ "text-align" : "center" }}><b>Pembelian Buah</b></h1>
+      <div style={{ padding: "20px", paddingTop: "0px" }}>
+        <div style={{ display: "block", "margin-bottom": "1em" }}>
+          <div style={{ display: "inline-block", width: "150px", "font-weight": "bold", "font-size": "16px" }}>
+            Nama Pelanggan
+          </div>
+          <input style={{ display: "inline-block" }} type="text" name="name" />
+        </div>
+        <div style={{ display: "block", "margin-bottom": "1em" }}>
+          <div style={{ display: "inline-block", width: "150px", "font-weight": "bold", "font-size": "16px" }}>
+            Daftar Item
+          </div>
+          <div style={{ display: "inline-block" }}>
+            <input type="checkbox" name="semangka" value="semangka"/>
+            <label>Semangka</label>
+            <br/>
+            <input type="checkbox" name="jeruk" value="jeruk"/>
+            <label>Jeruk</label>
+            <br/>
+            <input type="checkbox" name="nanas" value="nanas"/>
+            <label>Nanas</label>
+            <br/>
+            <input type="checkbox" name="salak" value="salak"/>
+            <label>Salak</label>
+            <br/>
+            <input type="checkbox" name="anggur" value="anggur"/>
+            <label>Anggur</label>
+          </div>
+        </div>
+        <button style={{ background: "white", "border-radius": "20px" }}>
+          <a href="#" style={{ "text-decoration": "none", color: "black" }}>Kirim</a>
+        </button>
+      </div>
     </div>
   );
 }
